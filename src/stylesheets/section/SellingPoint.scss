@@ -1,0 +1,54 @@
+.short-main-section {
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: var(--dark--background); // or use black: rgba(0,0,0,0.4)
+		opacity: 0.4; // 40% opacity
+		z-index: 0;
+	}
+
+	padding: 3rem 0;
+	position: relative;
+	z-index: 1;
+	background-image: url("../../images/cytonn-photography-n95VMLxqM2I-unsplash.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 350px;
+
+	>* {
+		position: relative;
+		z-index: 1;
+	}
+
+	h2 {
+		font-weight: bold;
+
+		z-index: 1;
+	}
+
+	p {
+		font-size: 1.2rem;
+		z-index: 1;
+
+	}
+
+	.cta-btn {
+		z-index: 1;
+
+		background: var(--magenta);
+		color: white;
+		border: none;
+		font-weight: bold;
+		padding: 0.75rem 2rem;
+		border-radius: 2rem;
+		margin-top: 1.5rem;
+		transition: background 0.2s;
+
+		&:hover {
+			background: var(--orange);
+			color: white;
+		}
+	}
+}

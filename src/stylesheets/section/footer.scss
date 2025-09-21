@@ -1,0 +1,18 @@
+.footer-section {
+    background: var(--light--background);
+    color: black;
+
+    a {
+        color: var(--dark--blue);
+        text-decoration: none;
+
+        &:hover {
+            color: var(--primary--blue);
+            text-decoration: underline;
+        }
+    }
+
+    .footer-logo {
+        max-width: 150px;
+    }
+}

@@ -1,0 +1,76 @@
+// How It Works
+.how-it-works {
+	color: var(--dark--blue);
+	background: var(--light--background);
+	padding: 3rem 0;
+
+	h2 {
+		color: var(--dark--blue);
+		font-weight: bold;
+		text-align: center;
+	}
+
+	p.intro {
+		color: var(--dark--blue);
+		text-align: center;
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+	}
+
+	.stepper-row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+
+		::after {
+			display: block;
+			width: 100%;
+		}
+	
+		@media (max-width: 900px) {
+			.stepper-row {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+
+	}
+
+	.step-card {
+		background: var(--dark--background);
+		border-radius: 12px;
+		padding: 18px 12px;
+		flex: 1 1 180px;
+		min-width: 180px;
+		max-width: 220px;
+		text-align: center;
+		box-shadow: 0 8px 20px 0 rgba(84, 156, 211, 0.08);
+		position: relative;
+
+		.step-icon {
+			font-size: 2.5rem;
+			color: white;
+			margin-bottom: 0.5rem;
+			display: inline-block;
+		}
+
+		.step-title {
+			color: white;
+			font-weight: bold;
+			margin-bottom: 0.5rem;
+			font-size: 1.1rem;
+		}
+
+		.step-desc {
+			color: white;
+			font-size: 1rem;
+		}
+
+		&:hover{
+			background-color: var(--magenta);
+			transition: background-color 0.3s ease;
+			box-shadow: 0 12px 24px 0 var(--dark--background);
+		}
+	}
+}

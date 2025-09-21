@@ -1,0 +1,37 @@
+.testimonials-section {
+	background: var(--light--background);
+	color: white;
+	padding: 3rem 0;
+
+	h2 {
+		color: var(--dark--blue);
+		font-weight: bold;
+	}
+
+	.lead {
+		color: var(--dark--blue);
+	}
+
+	.carousel-item {
+		q {
+			color: var(--dark--blue);
+		}
+		.mt-3 {
+			color: var(--dark--blue);
+			font-weight: bold;
+		}
+	}
+
+	.carousel-indicators {
+		position: relative;
+		[data-bs-target] {
+			background-color: var(--dark--blue);
+		}
+	}
+
+	.btn-outline-primary {
+		border-color: #000000;
+		color: var(--light--background);
+		background: var(--dark--blue);
+	}
+}

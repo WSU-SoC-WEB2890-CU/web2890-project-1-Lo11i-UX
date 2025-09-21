@@ -1,0 +1,38 @@
+header {
+    .header-color {
+        background: var(--primary--blue);
+    }
+
+    .nav-link {
+        color: white;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: var(--orange);
+        }
+    }
+
+    a {
+        color: white !important;
+        padding: 0 0.7rem;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+        .navbar-nav {
+            text-align: center;
+
+            .nav-item {
+                border-bottom: 1px solid white;
+                padding: 10px 0;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+
+        }
+    }
+}

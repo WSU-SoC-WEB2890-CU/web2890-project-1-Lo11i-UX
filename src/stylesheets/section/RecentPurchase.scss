@@ -1,0 +1,85 @@
+.recent-purchases-section {
+	background: var(--light--background);
+	color: var(--dark--background);
+	padding: 3rem 0;
+
+	h2 {
+		font-weight: 700;
+		color: var(--primary--blue);
+	}
+
+	p {
+		margin-bottom: 0.5rem;
+	}
+
+	.card {
+		background: var(--dark--background);
+		color: #FFF;
+		border-radius: 1rem;
+		box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		height: 100%;
+
+		&:hover {
+			transform: translateY(-8px);
+			box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+		}
+
+		p:last-child {
+			font-size: 0.9rem;
+			color: #ddd;
+			line-height: 1.5;
+		}
+	}
+
+
+	.card-title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: var(--primary--blue);
+		margin-bottom: 0.75rem;
+	}
+
+	strong {
+		color: var(--blue-sunset-orange2);
+	}
+
+	img {
+		border: 3px solid var(--blue-sunset-blue);
+		border-radius: 12px;
+		margin-bottom: 1rem;
+		max-height: 200px;
+		object-fit: cover;
+		width: 100%;
+	}
+
+
+	.cars {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+		gap: 0.75rem;
+		margin: 1rem 0;
+	}
+
+	.car {
+		background: rgba(255, 255, 255, 0.08);
+		border-radius: 8px;
+		padding: 0.5rem 0.75rem;
+		text-align: center;
+		font-size: 0.9rem;
+		font-weight: 500;
+		color: #f5f5f5;
+		transition: background 0.3s ease;
+
+		strong {
+			display: block;
+			font-size: 1rem;
+			color: var(--blue-sunset-orange2);
+			margin-bottom: 0.25rem;
+		}
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.15);
+		}
+	}
+}

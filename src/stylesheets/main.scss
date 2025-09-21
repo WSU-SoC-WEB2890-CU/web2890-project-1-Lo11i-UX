@@ -1,3 +1,28 @@
+:root {
+	--light--background: #E5E5E5;
+	--dark--background: #282d3f;
+	--magenta: #7e5269;
+	--primary--blue: #698DB6;
+	--dark--blue: #3c4858;
+	--orange: #d29537;
+	--red: #f44336;
+}
+
+body {
+  background-color: #E5E5E5;
+  color: #3C4858;
+}
+
+
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "section/RecentPurchase.scss";
+@import "section/SellingPoint.scss";
+@import "section/Hero.scss";
+@import "section/HowItWorks.scss";
+@import "section/QA.scss";
+@import "section/testimonals.scss";
+@import "section/Advantage.scss";
+@import "section/header.scss";
+@import "section/footer.scss";

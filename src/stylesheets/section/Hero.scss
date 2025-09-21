@@ -1,0 +1,27 @@
+.hero-section {
+	background: #282D3F;
+	color: #fff;
+	padding: 3rem 0;
+
+	h1 {
+		color: white;
+		font-weight: bold;
+	}
+
+	.lead {
+		color: white;
+	}
+
+	.card {
+		background: white;
+		border-radius: 6px;
+	}
+
+	.btn {
+		background: var(--primary--blue);
+		color: white;
+		font-weight: bold;
+		border: none;
+		transition: background 0.2s;
+	}
+}
